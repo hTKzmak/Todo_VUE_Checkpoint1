@@ -2,7 +2,7 @@
     <div :class="[completed ? 'todo_item completed' : 'todo_item not_completed']" :id="id" @dblclick="removeTask(id)"
         @click="changeComplete(id)">
         <h1>{{ title }}</h1>
-        <p>{{ completed }}</p>
+        <p>Выполнена задача: {{ completed ? 'Yes' : 'No' }}</p>
     </div>
 </template>
 
